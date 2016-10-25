@@ -9,7 +9,7 @@ $ truffle migrate
  
 $ truffle console
 
-truffle(default)> Registrar.deployed().abi 
+truffle(default)> Registrar.deployed().abi // we have a Registrar
 [ { constant: false,
     inputs: [ [Object] ],
     name: 'releaseDeed',
@@ -21,9 +21,12 @@ truffle(default)> Registrar.deployed().abi
     name: 'invalidateName',
 ....
 
+truffle(default)> Registrar.deployed().startAuction(.... // 
+
 ```
 
-
+__Suggestion:__ Try playing opening an auction for your own name, and playing
+through the timeline in the "Auctioning names" section of the [ERC](https://github.com/ethereum/EIPs/issues/162).
 
 
 Join the discussion and ask questions here: https://gitter.im/ethereum/go-ethereum/name-registry
